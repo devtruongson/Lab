@@ -202,4 +202,169 @@ main {
             }
         }
     }
+
+    .breadcrumb-wp {
+        div {
+
+            &:first-child {
+                display    : flex;
+                align-items: center;
+                gap        : 10px;
+                font-weight: 600;
+                color      : #2a81d8;
+
+                img {
+                    object-fit: cover;
+                }
+            }
+
+            &:last-child {
+                background-image: linear-gradient(to bottom, #d7e0f7, #f0f5fc, #fff);
+                height          : 40px;
+                border-radius   : 4px;
+            }
+        }
+    }
+
+    .product-list {
+
+        .product-item {
+            cursor     : pointer;
+            padding-top: 10px;
+            border     : 1px solid #8886fc;
+
+            &:hover {
+                transform: translateY(-2px);
+            }
+
+            h2 {
+                color             : blueviolet;
+                font-weight       : 700;
+                text-align        : center;
+                margin            : 10px 0;
+                display           : -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 1;
+                overflow          : hidden;
+            }
+
+            div {
+                &:first-child {
+                    img {
+                        width     : 90%;
+                        display   : block;
+                        margin    : 0 auto;
+                        height    : 210px;
+                        object-fit: contain;
+                    }
+                }
+
+                &:last-child {
+                    padding: 10px 0;
+
+                    p {
+                        text-align : center;
+                        font-weight: 600;
+
+                        span {
+                            color: #ee4d2d;
+                        }
+                    }
+
+                    div {
+                        display        : flex;
+                        justify-content: center;
+                        gap            : 10px;
+                        margin-top     : 6px;
+
+                        button {
+                            display         : flex;
+                            justify-content : center;
+                            align-items     : center;
+                            gap             : 6px;
+                            outline         : none;
+                            background-color: transparent;
+                            border          : 1px solid #ccc;
+                            padding         : 4px 10px;
+                            border-radius   : 4px;
+                            font-weight     : 600;
+
+                            &:hover {
+                                background-color: rgba(0, 0, 0, 0.1);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .cart {
+        text-align: center;
+        padding   : 6px 0;
+
+        &>span {
+            span {
+                color      : #ee4d2d;
+                font-weight: 600;
+            }
+        }
+    }
+
+    .search {
+
+        div {
+            flex: 1;
+
+            input {
+                border       : 1px solid #ccc;
+                width        : 100%;
+                border-radius: 4px;
+                height       : 30px;
+                padding      : 0 6px;
+                outline      : none;
+            }
+        }
+    }
+}
+
+footer {
+    padding: 6px 10px;
+
+    ul {
+        display         : flex;
+        background-color: #eee;
+        border          : 2px solid #247aff;
+        padding         : 15px 0;
+        border-radius   : 6px;
+        justify-content : center;
+
+        li {
+            width       : 150px;
+            border-right: 1px solid #247aff;
+            text-align  : center;
+
+            button {
+                border     : none;
+                outline    : none;
+                background : transparent;
+                color      : #247aff;
+                font-weight: 600;
+                font-size  : 15px;
+            }
+
+            &.no-border {
+                border-color: transparent;
+            }
+        }
+    }
+
+    div {
+        margin-top   : 12px;
+        margin-bottom: 20px;
+
+        p {
+            text-align: center;
+        }
+    }
 }
