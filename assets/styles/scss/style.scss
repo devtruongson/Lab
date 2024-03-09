@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Quicksand:wght@300;400;500;600;700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Raleway", sans-serif;
+}
+
+$width-language : 20%;
+$width-nav-menu : calc(100% - $width-language);
+
+main {
+    .banner-wp {
+        background-image   : url('../../images/banner.gif');
+        background-position: center center;
+        background-repeat  : no-repeat;
+        background-size    : cover;
+        height             : 200px;
+        position           : relative;
+
+        .languages {
+            padding         : 10px 0;
+            background-color: #2a81d8;
+            height          : 42px;
+            position        : absolute;
+            width           : 100%;
+            left            : 0;
+            right           : 0;
+            bottom          : 0;
+
+            &>div {
+                width          : $width-language;
+                display        : flex;
+                gap            : 20px;
+                justify-content: center;
+
+                button {
+                    background-color: transparent;
+                    border          : none;
+                    display         : flex;
+                    align-items     : center;
+                    gap             : 4px;
+                    color           : #fff;
+                    font-size       : 15px;
+                    font-weight     : 600;
+
+                    &:hover {
+                        color: #d9c7c5;
+                    }
+                }
+            }
+        }
+
+        .menu-nav {
+            background-color          : #db676a;
+            padding                   : 15px 10px;
+            border                    : 4px solid #fff;
+            border-radius             : 6% 94% 0% 100% / 100% 2% 98% 0%;
+            position                  : absolute;
+            width                     : $width-nav-menu;
+            right                     : 0;
+            bottom                    : 0;
+            float                     : right;
+            border-bottom             : 4px solid #5da9d2;
+            border-bottom             : 4px solid #5da9d2;
+            border-top-right-radius   : 10px;
+            border-bottom-right-radius: 10px;
+
+            ul {
+                justify-content: space-between;
+                display        : flex;
+                padding        : 0 20px;
+                font-size      : 18px;
+
+                li {
+                    width     : calc(100% / 8);
+                    text-align: center;
+
+                    button {
+                        border          : none;
+                        outline         : none;
+                        user-select     : none;
+                        background-color: transparent;
+                        color           : #fff;
+                        font-weight     : 600;
+
+                        &:hover {
+                            color: #d9c7c5;
+                        }
+                    }
+
+                    &.active-border {
+                        border-right: 2px solid #fff;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.body-content {
+
+    .left-categories {
+        border       : 1.4px solid #333;
+        padding      : 6px 4px;
+        border-radius: 6px;
+        margin-bottom: 10px;
+
+        .left-categories--heading {
+            position        : relative;
+            background-image: url('../../images/tcat_bg.gif');
+            display         : flex;
+            align-items     : center;
+            border-radius   : 4px;
+
+            span {
+                position       : absolute;
+                width          : 100%;
+                left           : 0;
+                right          : 0;
+                bottom         : 0;
+                top            : 0;
+                color          : #fff;
+                font-weight    : 600;
+                display        : flex;
+                justify-content: center;
+                align-items    : center;
+            }
+        }
+
+        .left-categories--item {
+            border-bottom: 1px dotted #000;
+            padding      : 10px 6px;
+            display      : flex;
+            align-items  : center;
+            gap          : 10px;
+            font-weight  : 500;
+            font-size    : 15px;
+
+            &.no-border {
+                border-color: transparent;
+            }
+
+            &:hover {
+                color           : #8b6760;
+                cursor          : pointer;
+                background-color: rgba(0, 0, 0, 0.1);
+            }
+
+            &.no-hover {
+
+                &:hover {
+                    color           : currentColor;
+                    background-color: transparent;
+                    cursor          : default;
+                }
+            }
+
+            &>div {
+                p {
+                    text-align: center;
+                }
+
+                a {
+                    display        : flex;
+                    justify-content: center;
+                    align-items    : center;
+                }
+
+                img {
+                    margin: 10px 2px;
+
+                    &:first-child {
+                        display: block;
+                    }
+                }
+            }
+        }
+
+        .table-price {
+            margin: 8px auto;
+            width : 90%;
+
+            tr {
+                th {
+                    border    : 1px solid #333;
+                    text-align: center;
+                }
+            }
+        }
+
+        .online-user {
+            display        : flex;
+            justify-content: center;
+            padding        : 20px 0;
+            gap            : 4px;
+
+            img {
+                object-fit: cover;
+            }
+        }
+    }
+}

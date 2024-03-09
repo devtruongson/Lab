@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Quicksand:wght@300;400;500;600;700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Raleway", sans-serif;
+}
+
+main .banner-wp {
+  background-image: url("../../images/banner.gif");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 200px;
+  position: relative;
+}
+main .banner-wp .languages {
+  padding: 10px 0;
+  background-color: #2a81d8;
+  height: 42px;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+main .banner-wp .languages > div {
+  width: 20%;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+main .banner-wp .languages > div button {
+  background-color: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+}
+main .banner-wp .languages > div button:hover {
+  color: #d9c7c5;
+}
+main .banner-wp .menu-nav {
+  background-color: #db676a;
+  padding: 15px 10px;
+  border: 4px solid #fff;
+  border-radius: 6% 94% 0% 100%/100% 2% 98% 0%;
+  position: absolute;
+  width: 80%;
+  right: 0;
+  bottom: 0;
+  float: right;
+  border-bottom: 4px solid #5da9d2;
+  border-bottom: 4px solid #5da9d2;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+main .banner-wp .menu-nav ul {
+  justify-content: space-between;
+  display: flex;
+  padding: 0 20px;
+  font-size: 18px;
+}
+main .banner-wp .menu-nav ul li {
+  width: 12.5%;
+  text-align: center;
+}
+main .banner-wp .menu-nav ul li button {
+  border: none;
+  outline: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  background-color: transparent;
+  color: #fff;
+  font-weight: 600;
+}
+main .banner-wp .menu-nav ul li button:hover {
+  color: #d9c7c5;
+}
+main .banner-wp .menu-nav ul li.active-border {
+  border-right: 2px solid #fff;
+}
+
+.body-content .left-categories {
+  border: 1.4px solid #333;
+  padding: 6px 4px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+.body-content .left-categories .left-categories--heading {
+  position: relative;
+  background-image: url("../../images/tcat_bg.gif");
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+}
+.body-content .left-categories .left-categories--heading span {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  color: #fff;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.body-content .left-categories .left-categories--item {
+  border-bottom: 1px dotted #000;
+  padding: 10px 6px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 500;
+  font-size: 15px;
+}
+.body-content .left-categories .left-categories--item.no-border {
+  border-color: transparent;
+}
+.body-content .left-categories .left-categories--item:hover {
+  color: #8b6760;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.body-content .left-categories .left-categories--item.no-hover:hover {
+  color: currentColor;
+  background-color: transparent;
+  cursor: default;
+}
+.body-content .left-categories .left-categories--item > div p {
+  text-align: center;
+}
+.body-content .left-categories .left-categories--item > div a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.body-content .left-categories .left-categories--item > div img {
+  margin: 10px 2px;
+}
+.body-content .left-categories .left-categories--item > div img:first-child {
+  display: block;
+}
+.body-content .left-categories .table-price {
+  margin: 8px auto;
+  width: 90%;
+}
+.body-content .left-categories .table-price tr th {
+  border: 1px solid #333;
+  text-align: center;
+}
+.body-content .left-categories .online-user {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+  gap: 4px;
+}
+.body-content .left-categories .online-user img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}/*# sourceMappingURL=style.css.map */
